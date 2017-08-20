@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Vocabulary Game</string>
+    <string name="action_settings">Settings</string>
+    <string name="number_of_choices">Number of Choices</string>
+    <string name="number_of_choices_description">Display 2, 4, 6 or 8 guess buttons</string>
+    <string name="words_level">Level</string>
+    <string name="words_level_description">Level of words to include in the quiz</string>
+    <string name="word_categories">Categories</string>
+    <string name="word_categories_description">Word categories to include in the quiz</string>
+    <string name="guess_word">Guess the Word</string>
+    <string name="results">%1$d guesses, %2$.02f%% correct</string>
+    <string name="incorrect_answer">Incorrect!</string>
+    <string name="default_category_message">One category must be selected. Setting Noun as the default category.</string>
+    <string name="restarting_quiz">Quiz will restart with your new settings</string>
+    <string name="question">Question %1$d of %2$d</string>
+    <string name="answer">%1$s!</string>
+    <string name="reset_quiz">Reset Quiz</string>
+    <string name="image_description">Image of the current word in the quiz</string>
+    <string name="default_category">Noun</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_word_guess">Guess the Word</string>
+    <string name="title_activity_word_spell">Spell the Word</string>
+    <string name="guess_word_button_caption">Guess the Word Quiz</string>
+    <string name="spell_word_button_caption">Spell the Word Quiz</string>
+</resources>

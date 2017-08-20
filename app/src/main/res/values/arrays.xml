@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="categories_list">
+        <item>Adjective</item>
+        <item>Adverb</item>
+        <item>Animals</item>
+        <item>Colors</item>
+        <item>Conjunction</item>
+        <item>Days</item>
+        <item>Determiner</item>
+        <item>Interjections</item>
+        <item>Months</item>
+        <item>Noun</item>
+        <item>Numbers</item>
+        <item>People</item>
+        <item>Preposition</item>
+        <item>Pronoun</item>
+        <item>Time</item>
+        <item>Verb</item>
+    </string-array>
+
+    <string-array name="categories_list_for_settings">
+        <item>Adjective</item>
+        <item>Adverb</item>
+        <item>Animals</item>
+        <item>Colors</item>
+        <item>Conjunction</item>
+        <item>Days</item>
+        <item>Determiner</item>
+        <item>Interjections</item>
+        <item>Months</item>
+        <item>Noun</item>
+        <item>Numbers</item>
+        <item>People</item>
+        <item>Preposition</item>
+        <item>Pronoun</item>
+        <item>Time</item>
+        <item>Verb</item>
+    </string-array>
+
+    <string-array name="guesses_list">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="levels_list">
+        <item>Basic</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+
+</resources>
