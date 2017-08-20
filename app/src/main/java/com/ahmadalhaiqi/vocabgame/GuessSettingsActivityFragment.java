@@ -5,12 +5,12 @@ package com.ahmadalhaiqi.vocabgame;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 
-public class SettingsActivityFragment extends PreferenceFragment {
-   // creates preferences GUI from preferences.xml file in res/xml
+public class GuessSettingsActivityFragment extends PreferenceFragment {
+   // creates guess_preferences GUI from guess_preferencesrences.xml file in res/xml
    @Override
    public void onCreate(Bundle bundle) {
       super.onCreate(bundle);
-      addPreferencesFromResource(R.xml.preferences); // load from XML
+      addPreferencesFromResource(R.xml.guess_preferences); // load from XML
    }
 }
 

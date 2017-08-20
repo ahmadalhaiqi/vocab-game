@@ -1,12 +1,12 @@
 // SettingsActivity.java
-// Activity to display SettingsActivityFragment on a phone
+// Activity to display GuessSettingsActivityFragment on a phone
 package com.ahmadalhaiqi.vocabgame;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-public class SettingsActivity extends AppCompatActivity {
+public class GuessSettingsActivity extends AppCompatActivity {
    // inflates the GUI, displays Toolbar and adds "up" button
    @Override
    protected void onCreate(Bundle savedInstanceState) {

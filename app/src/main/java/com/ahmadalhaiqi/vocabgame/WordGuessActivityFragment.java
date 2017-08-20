@@ -422,7 +422,7 @@ public class WordGuessActivityFragment extends Fragment {
     }
 
     @Override
-    public void onDestroy() {
+        public void onDestroy() {
         mDbHelper.close();
         super.onDestroy();
     }

@@ -1,6 +1,6 @@
 // MainActivity.java
 // Hosts the WordGuessActivityFragment on a phone and both the
-// WordGuessActivityFragment and SettingsActivityFragment on a tablet
+// WordGuessActivityFragment and GuessSettingsActivityFragment on a tablet
 package com.ahmadalhaiqi.vocabgame;
 
 import android.content.Intent;
@@ -25,7 +25,7 @@ public class WordGuessActivity extends AppCompatActivity {
     public static final String CATEGORIES = "pref_categoriesToInclude";
 
     private boolean phoneDevice = true; // used to force portrait mode
-    private boolean preferencesChanged = true; // did preferences change?
+    private boolean preferencesChanged = true; // d id guess_preferences change?
 
     // configure the WordGuessActivity
     @Override
@@ -34,9 +34,10 @@ public class WordGuessActivity extends AppCompatActivity {
         setContentView(R.layout.activity_word_guess);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // set default values in the app's SharedPreferences
-        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+        PreferenceManager.setDefaultValues(this, R.xml.guess_preferences, false);
 
         // register listener for SharedPreferences changes
         PreferenceManager.getDefaultSharedPreferences(this).
@@ -64,7 +65,7 @@ public class WordGuessActivity extends AppCompatActivity {
         super.onStart();
 
         if (preferencesChanged) {
-            // now that the default preferences have been set,
+            // now that the default guess_preferences have been set,
             // initialize WordGuessActivityFragment and start the quiz
             WordGuessActivityFragment quizFragment = (WordGuessActivityFragment)
                     getSupportFragmentManager().findFragmentById(
@@ -95,18 +96,22 @@ public class WordGuessActivity extends AppCompatActivity {
             return false;
     }
 
-    // displays the SettingsActivity when running on a phone
+    // displays the GuessSettingsActivity when running on a phone
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent preferencesIntent = new Intent(this, SettingsActivity.class);
-        startActivity(preferencesIntent);
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                Intent preferencesIntent = new Intent(this, GuessSettingsActivity.class);
+                startActivity(preferencesIntent);
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
     // listener for changes to the app's SharedPreferences
     private OnSharedPreferenceChangeListener preferencesChangeListener =
             new OnSharedPreferenceChangeListener() {
-                // called when the user changes the app's preferences
+                // called when the user changes the app's guess_preferences
                 @Override
                 public void onSharedPreferenceChanged(
                         SharedPreferences sharedPreferences, String key) {
